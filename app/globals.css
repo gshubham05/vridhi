@@ -1,0 +1,277 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   Vridhi Construction — design tokens
+   Brand palette as specified, plus two text-safe companions:
+   --color-gold-deep / --color-olive-deep meet WCAG AA (4.5:1) for small
+   text on Ivory, where the specified Gold (≈2.9:1) and Olive (≈4.2:1) do not.
+   Use Gold/Olive for rules, icons, large type and dark backgrounds.
+------------------------------------------------------------------- */
+@theme {
+  --color-ivory: #f7f5f0;
+  --color-paper: #ffffff;
+  --color-charcoal: #222522;
+  --color-gold: #b18a4a;
+  --color-gold-deep: #8a6a33;
+  --color-olive: #77765e;
+  --color-olive-deep: #5f5e4a;
+  --color-stone: #e9e4da;
+  --color-whatsapp: #0a7a5a;
+
+  --font-serif: var(--font-dm-serif), "Iowan Old Style", Georgia, serif;
+  --font-sans: var(--font-dm-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --ease-lux: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root {
+  color-scheme: light;
+  --header-h: 4.5rem;
+  --bar-h: 4.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + 1rem);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--color-gold) 32%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold-deep);
+  outline-offset: 3px;
+}
+.on-dark :focus-visible,
+.on-dark:focus-visible {
+  outline-color: var(--color-gold);
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+/* Layout ------------------------------------------------------------ */
+.container-lux {
+  width: 100%;
+  max-width: 88rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 3.5rem);
+}
+.container-narrow {
+  width: 100%;
+  max-width: 60rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 3.5rem);
+}
+.section {
+  padding-block: clamp(4.5rem, 9vw, 9rem);
+}
+.section-sm {
+  padding-block: clamp(3rem, 6vw, 5.5rem);
+}
+
+/* Typography -------------------------------------------------------- */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-gold-deep);
+}
+.eyebrow::before {
+  content: "";
+  width: 2rem;
+  height: 1px;
+  background: currentColor;
+  flex: none;
+}
+.on-dark .eyebrow {
+  color: var(--color-gold);
+}
+
+.display-xl,
+.display-lg,
+.display-md,
+.display-sm {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.018em;
+  text-wrap: balance;
+}
+.display-xl {
+  font-size: clamp(2.6rem, 7.2vw, 6.25rem);
+  line-height: 1.02;
+}
+.display-lg {
+  font-size: clamp(2.1rem, 4.6vw, 4rem);
+  line-height: 1.06;
+}
+.display-md {
+  font-size: clamp(1.7rem, 3vw, 2.7rem);
+  line-height: 1.12;
+}
+.display-sm {
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  line-height: 1.2;
+}
+
+.lead {
+  font-size: clamp(1.0625rem, 1.35vw, 1.25rem);
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
+.prose-lux p {
+  margin-block: 1.15em;
+  text-wrap: pretty;
+}
+.prose-lux h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  line-height: 1.15;
+  letter-spacing: -0.012em;
+  margin-top: 2.4em;
+  margin-bottom: 0.6em;
+}
+.prose-lux h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  margin-top: 1.9em;
+  margin-bottom: 0.4em;
+}
+.prose-lux ul,
+.prose-lux ol {
+  margin-block: 1.1em;
+  padding-left: 1.4em;
+}
+.prose-lux ul {
+  list-style: none;
+  padding-left: 0;
+}
+.prose-lux ul li {
+  position: relative;
+  padding-left: 1.6em;
+  margin-block: 0.55em;
+}
+.prose-lux ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.8em;
+  width: 0.85rem;
+  height: 1px;
+  background: var(--color-gold);
+}
+.prose-lux ol {
+  list-style: decimal;
+}
+.prose-lux ol li {
+  margin-block: 0.55em;
+  padding-left: 0.3em;
+}
+.prose-lux ol li::marker {
+  color: var(--color-gold-deep);
+  font-weight: 500;
+}
+
+/* Signature details -------------------------------------------------- */
+.hairline {
+  border-color: color-mix(in oklab, var(--color-gold) 38%, var(--color-stone));
+}
+.rule-gold {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    var(--color-gold),
+    color-mix(in oklab, var(--color-gold) 0%, transparent)
+  );
+}
+
+/* Architectural drafting grid, used sparingly on dark sections */
+.plan-grid {
+  background-image:
+    linear-gradient(to right, color-mix(in oklab, var(--color-gold) 11%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--color-gold) 11%, transparent) 1px, transparent 1px);
+  background-size: 5rem 5rem;
+}
+
+.link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.55s var(--ease-lux);
+}
+.link-underline:hover,
+.link-underline:focus-visible {
+  background-size: 100% 1px;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Reduced motion: collapse decorative motion globally */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Native dialog (gallery lightbox) */
+dialog::backdrop {
+  background: color-mix(in oklab, var(--color-charcoal) 92%, transparent);
+}
+
+/* Hero entrance: pure CSS so it starts at first paint, with no JavaScript
+   dependency and no delay to Largest Contentful Paint. The image only scales
+   (never fades), so it counts as painted immediately. */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes settle {
+  from {
+    transform: scale(1.06);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.hero-rise {
+  animation: rise 1s var(--ease-lux) both;
+  animation-delay: var(--d, 0s);
+}
+.hero-settle {
+  animation: settle 2.6s var(--ease-lux) both;
+}

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Architectural placeholder illustration">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f1ea"/><stop offset="1" stop-color="#e3ddd0"/></linearGradient>
+<linearGradient id="lit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b18a4a" stop-opacity="0.4"/><stop offset="1" stop-color="#b18a4a" stop-opacity="0.1"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="1" r="0.8"><stop offset="0" stop-color="#b18a4a" stop-opacity="0.22"/><stop offset="1" stop-color="#b18a4a" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<g stroke="#222522" stroke-opacity="0.05" stroke-width="1"><path d="M0 0V900"/><path d="M100 0V900"/><path d="M200 0V900"/><path d="M300 0V900"/><path d="M400 0V900"/><path d="M500 0V900"/><path d="M600 0V900"/><path d="M700 0V900"/><path d="M800 0V900"/><path d="M900 0V900"/><path d="M1000 0V900"/><path d="M1100 0V900"/><path d="M1200 0V900"/><path d="M1300 0V900"/><path d="M1400 0V900"/><path d="M1500 0V900"/><path d="M1600 0V900"/><path d="M0 0H1600"/><path d="M0 100H1600"/><path d="M0 200H1600"/><path d="M0 300H1600"/><path d="M0 400H1600"/><path d="M0 500H1600"/><path d="M0 600H1600"/><path d="M0 700H1600"/><path d="M0 800H1600"/><path d="M0 900H1600"/></g>
+
+<ellipse cx="860" cy="690" rx="760" ry="190" fill="url(#glow)"/>
+<circle cx="391" cy="191" r="96" fill="none" stroke="#b18a4a" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="0" y="690" width="1600" height="210" fill="#d9d2c3"/>
+<path d="M0 690H1600" stroke="#222522" stroke-opacity="0.55" stroke-width="2"/>
+
+<!-- tree (outline only) -->
+<g stroke="#222522" stroke-opacity="0.28" fill="none" stroke-width="1.5">
+<path d="M1294 690V540"/>
+<circle cx="1294" cy="475" r="86"/>
+<circle cx="1240" cy="520" r="52"/>
+<circle cx="1350" cy="514" r="58"/>
+</g>
+
+<!-- ground-floor volume -->
+<rect x="536.5" y="499" width="599" height="191" fill="#fbfaf6" stroke="#222522" stroke-opacity="0.55" stroke-width="2"/>
+<rect x="576.5" y="527" width="335.44000000000005" height="163" fill="url(#lit)"/>
+<g stroke="#222522" stroke-opacity="0.35" stroke-width="1.5"><path d="M632.4066666666666 527V690"/><path d="M688.3133333333334 527V690"/><path d="M744.22 527V690"/><path d="M800.1266666666667 527V690"/><path d="M856.0333333333333 527V690"/></g>
+<rect x="955.8" y="529" width="119.80000000000001" height="161" fill="#ece7dc" stroke="#222522" stroke-opacity="0.35" stroke-width="1.5"/>
+
+<!-- upper volume, cantilevered -->
+<rect x="651.5" y="272" width="630" height="227" fill="#ece7dc" stroke="#222522" stroke-opacity="0.55" stroke-width="2"/>
+<rect x="691.5" y="298" width="315" height="175" fill="url(#lit)"/>
+<g stroke="#222522" stroke-opacity="0.35" stroke-width="1.5"><path d="M770.25 298V473"/><path d="M849 298V473"/><path d="M927.75 298V473"/></g>
+<g stroke="#222522" stroke-opacity="0.32" stroke-width="2"><path d="M1042.1 288V491"/><path d="M1057.1 288V491"/><path d="M1072.1 288V491"/><path d="M1087.1 288V491"/><path d="M1102.1 288V491"/><path d="M1117.1 288V491"/><path d="M1132.1 288V491"/><path d="M1147.1 288V491"/><path d="M1162.1 288V491"/><path d="M1177.1 288V491"/><path d="M1192.1 288V491"/><path d="M1207.1 288V491"/><path d="M1222.1 288V491"/><path d="M1237.1 288V491"/><path d="M1252.1 288V491"/></g>
+
+<!-- slabs -->
+<rect x="615.5" y="256" width="702" height="16" fill="#222522" fill-opacity="0.9"/>
+<rect x="643.5" y="497" width="646" height="12" fill="#222522" fill-opacity="0.7"/>
+<rect x="716.2" y="497" width="215.64" height="9" fill="#222522" fill-opacity="0.8"/>
+
+<!-- drafting guides + dimension ticks -->
+<g stroke="#b18a4a" stroke-opacity="0.45" stroke-width="1" stroke-dasharray="6 8">
+<path d="M0 256H1600"/><path d="M0 499H1600"/>
+</g>
+<g stroke="#b18a4a" stroke-opacity="0.6" stroke-width="1.5">
+<path d="M536.5 746H1135.5"/>
+<path d="M536.5 736V756"/><path d="M1135.5 736V756"/>
+<path d="M480.5 256V690"/>
+<path d="M470.5 256H490.5"/><path d="M470.5 690H490.5"/>
+</g>
+</svg>

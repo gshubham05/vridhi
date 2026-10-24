@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Architectural placeholder illustration">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#151815"/><stop offset="1" stop-color="#2a2e29"/></linearGradient>
+<linearGradient id="lit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b18a4a" stop-opacity="0.5"/><stop offset="1" stop-color="#b18a4a" stop-opacity="0.125"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="1" r="0.8"><stop offset="0" stop-color="#b18a4a" stop-opacity="0.22"/><stop offset="1" stop-color="#b18a4a" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<g stroke="#f7f5f0" stroke-opacity="0.05" stroke-width="1"><path d="M0 0V900"/><path d="M100 0V900"/><path d="M200 0V900"/><path d="M300 0V900"/><path d="M400 0V900"/><path d="M500 0V900"/><path d="M600 0V900"/><path d="M700 0V900"/><path d="M800 0V900"/><path d="M900 0V900"/><path d="M1000 0V900"/><path d="M1100 0V900"/><path d="M1200 0V900"/><path d="M1300 0V900"/><path d="M1400 0V900"/><path d="M1500 0V900"/><path d="M1600 0V900"/><path d="M0 0H1600"/><path d="M0 100H1600"/><path d="M0 200H1600"/><path d="M0 300H1600"/><path d="M0 400H1600"/><path d="M0 500H1600"/><path d="M0 600H1600"/><path d="M0 700H1600"/><path d="M0 800H1600"/><path d="M0 900H1600"/></g>
+
+<ellipse cx="842" cy="690" rx="760" ry="190" fill="url(#glow)"/>
+<circle cx="194" cy="237" r="80" fill="none" stroke="#b18a4a" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="0" y="690" width="1600" height="210" fill="#111311"/>
+<path d="M0 690H1600" stroke="#f7f5f0" stroke-opacity="0.5" stroke-width="2"/>
+
+<!-- tree (outline only) -->
+<g stroke="#f7f5f0" stroke-opacity="0.28" fill="none" stroke-width="1.5">
+<path d="M1388 690V540"/>
+<circle cx="1388" cy="475" r="86"/>
+<circle cx="1334" cy="520" r="52"/>
+<circle cx="1444" cy="514" r="58"/>
+</g>
+
+<!-- ground-floor volume -->
+<rect x="468.5" y="495" width="631" height="195" fill="#232622" stroke="#f7f5f0" stroke-opacity="0.5" stroke-width="2"/>
+<rect x="508.5" y="523" width="353.36" height="167" fill="url(#lit)"/>
+<g stroke="#f7f5f0" stroke-opacity="0.35" stroke-width="1.5"><path d="M567.3933333333333 523V690"/><path d="M626.2866666666666 523V690"/><path d="M685.1800000000001 523V690"/><path d="M744.0733333333334 523V690"/><path d="M802.9666666666667 523V690"/></g>
+<rect x="910.2" y="525" width="126.2" height="165" fill="#2e322d" stroke="#f7f5f0" stroke-opacity="0.35" stroke-width="1.5"/>
+
+<!-- upper volume, cantilevered -->
+<rect x="679.5" y="280" width="756" height="215" fill="#2e322d" stroke="#f7f5f0" stroke-opacity="0.5" stroke-width="2"/>
+<rect x="719.5" y="306" width="378" height="163" fill="url(#lit)"/>
+<g stroke="#f7f5f0" stroke-opacity="0.35" stroke-width="1.5"><path d="M814 306V469"/><path d="M908.5 306V469"/><path d="M1003 306V469"/></g>
+<g stroke="#f7f5f0" stroke-opacity="0.32" stroke-width="2"><path d="M1148.22 296V487"/><path d="M1163.22 296V487"/><path d="M1178.22 296V487"/><path d="M1193.22 296V487"/><path d="M1208.22 296V487"/><path d="M1223.22 296V487"/><path d="M1238.22 296V487"/><path d="M1253.22 296V487"/><path d="M1268.22 296V487"/><path d="M1283.22 296V487"/><path d="M1298.22 296V487"/><path d="M1313.22 296V487"/><path d="M1328.22 296V487"/><path d="M1343.22 296V487"/><path d="M1358.22 296V487"/><path d="M1373.22 296V487"/><path d="M1388.22 296V487"/><path d="M1403.22 296V487"/></g>
+
+<!-- slabs -->
+<rect x="643.5" y="264" width="828" height="16" fill="#f7f5f0" fill-opacity="0.9"/>
+<rect x="671.5" y="493" width="772" height="12" fill="#f7f5f0" fill-opacity="0.7"/>
+<rect x="657.8" y="493" width="227.16" height="9" fill="#f7f5f0" fill-opacity="0.8"/>
+
+<!-- drafting guides + dimension ticks -->
+<g stroke="#b18a4a" stroke-opacity="0.45" stroke-width="1" stroke-dasharray="6 8">
+<path d="M0 264H1600"/><path d="M0 495H1600"/>
+</g>
+<g stroke="#b18a4a" stroke-opacity="0.6" stroke-width="1.5">
+<path d="M468.5 746H1099.5"/>
+<path d="M468.5 736V756"/><path d="M1099.5 736V756"/>
+<path d="M412.5 264V690"/>
+<path d="M402.5 264H422.5"/><path d="M402.5 690H422.5"/>
+</g>
+</svg>

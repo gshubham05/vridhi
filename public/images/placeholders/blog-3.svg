@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Architectural placeholder illustration">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#151815"/><stop offset="1" stop-color="#2a2e29"/></linearGradient>
+<linearGradient id="lit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b18a4a" stop-opacity="0.5"/><stop offset="1" stop-color="#b18a4a" stop-opacity="0.125"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="1" r="0.8"><stop offset="0" stop-color="#b18a4a" stop-opacity="0.22"/><stop offset="1" stop-color="#b18a4a" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<g stroke="#f7f5f0" stroke-opacity="0.05" stroke-width="1"><path d="M0 0V900"/><path d="M100 0V900"/><path d="M200 0V900"/><path d="M300 0V900"/><path d="M400 0V900"/><path d="M500 0V900"/><path d="M600 0V900"/><path d="M700 0V900"/><path d="M800 0V900"/><path d="M900 0V900"/><path d="M1000 0V900"/><path d="M1100 0V900"/><path d="M1200 0V900"/><path d="M1300 0V900"/><path d="M1400 0V900"/><path d="M1500 0V900"/><path d="M1600 0V900"/><path d="M0 0H1600"/><path d="M0 100H1600"/><path d="M0 200H1600"/><path d="M0 300H1600"/><path d="M0 400H1600"/><path d="M0 500H1600"/><path d="M0 600H1600"/><path d="M0 700H1600"/><path d="M0 800H1600"/><path d="M0 900H1600"/></g>
+
+<ellipse cx="825" cy="690" rx="760" ry="190" fill="url(#glow)"/>
+<circle cx="212" cy="211" r="95" fill="none" stroke="#b18a4a" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="0" y="690" width="1600" height="210" fill="#111311"/>
+<path d="M0 690H1600" stroke="#f7f5f0" stroke-opacity="0.5" stroke-width="2"/>
+
+<!-- tree (outline only) -->
+<g stroke="#f7f5f0" stroke-opacity="0.28" fill="none" stroke-width="1.5">
+<path d="M1424 690V540"/>
+<circle cx="1424" cy="475" r="86"/>
+<circle cx="1370" cy="520" r="52"/>
+<circle cx="1480" cy="514" r="58"/>
+</g>
+
+<!-- ground-floor volume -->
+<rect x="466" y="497" width="596" height="193" fill="#232622" stroke="#f7f5f0" stroke-opacity="0.5" stroke-width="2"/>
+<rect x="506" y="525" width="333.76000000000005" height="165" fill="url(#lit)"/>
+<g stroke="#f7f5f0" stroke-opacity="0.35" stroke-width="1.5"><path d="M561.6266666666667 525V690"/><path d="M617.2533333333333 525V690"/><path d="M672.88 525V690"/><path d="M728.5066666666667 525V690"/><path d="M784.1333333333334 525V690"/></g>
+<rect x="883.2" y="527" width="119.2" height="163" fill="#2e322d" stroke="#f7f5f0" stroke-opacity="0.35" stroke-width="1.5"/>
+
+<!-- upper volume, cantilevered -->
+<rect x="599" y="288" width="728" height="209" fill="#2e322d" stroke="#f7f5f0" stroke-opacity="0.5" stroke-width="2"/>
+<rect x="639" y="314" width="364" height="157" fill="url(#lit)"/>
+<g stroke="#f7f5f0" stroke-opacity="0.35" stroke-width="1.5"><path d="M730 314V471"/><path d="M821 314V471"/><path d="M912 314V471"/></g>
+<g stroke="#f7f5f0" stroke-opacity="0.32" stroke-width="2"><path d="M1050.3600000000001 304V489"/><path d="M1065.3600000000001 304V489"/><path d="M1080.3600000000001 304V489"/><path d="M1095.3600000000001 304V489"/><path d="M1110.3600000000001 304V489"/><path d="M1125.3600000000001 304V489"/><path d="M1140.3600000000001 304V489"/><path d="M1155.3600000000001 304V489"/><path d="M1170.3600000000001 304V489"/><path d="M1185.3600000000001 304V489"/><path d="M1200.3600000000001 304V489"/><path d="M1215.3600000000001 304V489"/><path d="M1230.3600000000001 304V489"/><path d="M1245.3600000000001 304V489"/><path d="M1260.3600000000001 304V489"/><path d="M1275.3600000000001 304V489"/><path d="M1290.3600000000001 304V489"/></g>
+
+<!-- slabs -->
+<rect x="563" y="272" width="800" height="16" fill="#f7f5f0" fill-opacity="0.9"/>
+<rect x="591" y="495" width="744" height="12" fill="#f7f5f0" fill-opacity="0.7"/>
+<rect x="644.8" y="495" width="214.56" height="9" fill="#f7f5f0" fill-opacity="0.8"/>
+
+<!-- drafting guides + dimension ticks -->
+<g stroke="#b18a4a" stroke-opacity="0.45" stroke-width="1" stroke-dasharray="6 8">
+<path d="M0 272H1600"/><path d="M0 497H1600"/>
+</g>
+<g stroke="#b18a4a" stroke-opacity="0.6" stroke-width="1.5">
+<path d="M466 746H1062"/>
+<path d="M466 736V756"/><path d="M1062 736V756"/>
+<path d="M410 272V690"/>
+<path d="M400 272H420"/><path d="M400 690H420"/>
+</g>
+</svg>
